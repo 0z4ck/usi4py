@@ -1,0 +1,492 @@
+usi
+id name Lesserkai 1.4.2
+id author Program Writer
+option name BookFile type string default public.bin
+option name UseBook type check default true
+usiok
+setoption name USI_Ponder value false
+setoption name USI_Hash value 256
+isready
+readyok
+usinewgame
+position startpos
+go btime 0 wtime 0 byoyomi 5000
+info time 0 depth 1 nodes 33 score cp 10 pv 6i7h
+info currmove 6i7h
+info time 1 depth 2 nodes 126 score cp 0 pv 6i7h 4a3b
+info currmove 6i7h
+info time 2 depth 3 nodes 2076 score cp 3 pv 6i7h 4a3b 5i6h
+info currmove 6i7h
+info currmove 6i7h
+info time 4 depth 4 nodes 6553 score cp 0 pv 6i7h 4a3b 5i6h 5a4b
+info currmove 6i7h
+info time 11 nodes 21461 score cp 0 pv 6i7h 4a3b 5i6h 5a4b
+bestmove 6i7h
+position startpos moves 6i7h 3c3d
+go btime 0 wtime 0 byoyomi 5000
+info currmove 5i6h
+info time 0 depth 1 nodes 4 score cp 12 pv 5i6h
+info currmove 5i6h
+info currmove 5i6h
+info time 0 depth 2 nodes 135 score cp 2 pv 5i6h 4a3b
+info currmove 5i6h
+info currmove 5i6h
+info time 2 depth 3 nodes 2152 score cp 5 pv 5i6h 4a3b 4i5h
+info currmove 5i6h
+info currmove 5i6h
+info time 5 depth 4 nodes 6988 score cp 2 pv 5i6h 4a3b 4i5h 6a5b
+info currmove 5i6h
+info time 12 nodes 20849 score cp 2 pv 5i6h 4a3b 4i5h 6a5b
+bestmove 5i6h
+position startpos moves 6i7h 3c3d 5i6h 4c4d
+go btime 0 wtime 0 byoyomi 5000
+info currmove 4i5h
+info time 0 depth 1 nodes 4 score cp 14 pv 4i5h
+info currmove 4i5h
+info currmove 4i5h
+info time 0 depth 2 nodes 123 score cp 4 pv 4i5h 4a3b
+info currmove 4i5h
+info currmove 4i5h
+info time 1 depth 3 nodes 1747 score cp 5 pv 4i5h 4a3b 1g1f
+info currmove 4i5h
+info currmove 4i5h
+info time 2 depth 4 nodes 5810 score cp 2 pv 4i5h 4a3b 1g1f 6a5b
+info currmove 4i5h
+info time 6 nodes 16278 score cp 2 pv 4i5h 4a3b 1g1f 6a5b
+bestmove 4i5h
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b
+go btime 0 wtime 0 byoyomi 5000
+info currmove 1g1f
+info time 0 depth 1 nodes 4 score cp 0 pv 1g1f
+info currmove 1g1f
+info time 0 depth 1 nodes 27 score cp 15 pv 3i4h
+info currmove 3i4h
+info time 0 depth 2 nodes 113 score cp 1 pv 3i4h 5a6b
+info currmove 1g1f
+info currmove 3i4h
+info time 1 depth 3 nodes 1485 score cp 2 pv 3i4h 5a6b 1g1f
+info currmove 3i4h
+info currmove 3i4h
+info time 2 depth 4 nodes 5061 score cp -11 pv 3i4h 5a6b 1g1f 3a3b
+info currmove 3i4h
+info time 6 nodes 13894 score cp -11 pv 3i4h 5a6b 1g1f 3a3b
+bestmove 3i4h
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b
+go btime 0 wtime 0 byoyomi 5000
+info currmove 1g1f
+info time 1 depth 1 nodes 4 score cp 3 pv 1g1f
+info currmove 1g1f
+info currmove 1g1f
+info time 1 depth 2 nodes 111 score cp -11 pv 1g1f 5a6b
+info currmove 1g1f
+info currmove 1g1f
+info time 1 depth 3 nodes 1520 score cp -9 pv 1g1f 5a6b 1f1e
+info currmove 1g1f
+info time 2 depth 3 nodes 2347 score cp -7 pv 3g3f 5a6b 4h3g
+info currmove 3g3f
+info time 3 depth 4 nodes 5657 score cp -11 pv 3g3f 5a6b 4h3g 4a5b
+info currmove 1g1f
+info time 5 nodes 11834 score cp -11 pv 3g3f 5a6b 4h3g 4a5b
+bestmove 3g3f
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b
+go btime 0 wtime 0 byoyomi 5000
+info currmove 4h3g
+info time 0 depth 1 nodes 4 score cp -7 pv 4h3g
+info currmove 4h3g
+info currmove 4h3g
+info time 0 depth 2 nodes 109 score cp -11 pv 4h3g 4a5b
+info currmove 4h3g
+info currmove 4h3g
+info time 0 depth 3 nodes 911 score cp -10 pv 4h3g 4a5b 1g1f
+info currmove 4h3g
+info currmove 4h3g
+info time 2 depth 4 nodes 4214 score cp -14 pv 4h3g 4a5b 1g1f 7a7b
+info currmove 4h3g
+info time 5 nodes 12182 score cp -14 pv 4h3g 4a5b 1g1f 7a7b
+bestmove 4h3g
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c
+go btime 0 wtime 0 byoyomi 5000
+info currmove 1g1f
+info time 0 depth 1 nodes 4 score cp -9 pv 1g1f
+info currmove 1g1f
+info currmove 1g1f
+info time 0 depth 2 nodes 113 score cp -13 pv 1g1f 4a5b
+info currmove 1g1f
+info currmove 1g1f
+info time 0 depth 3 nodes 1620 score cp -11 pv 1g1f 4a5b 1f1e
+info currmove 1g1f
+info currmove 1g1f
+info time 2 depth 4 nodes 5182 score cp -15 pv 1g1f 4a5b 1f1e 7a7b
+info currmove 1g1f
+info time 4 nodes 11813 score cp -15 pv 1g1f 4a5b 1f1e 7a7b
+bestmove 1g1f
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d
+go btime 0 wtime 0 byoyomi 5000
+info currmove 1f1e
+info time 0 depth 1 nodes 4 score cp 9 pv 1f1e
+info currmove 1f1e
+info currmove 1f1e
+info time 0 depth 2 nodes 118 score cp -7 pv 1f1e 5d4c
+info currmove 1f1e
+info currmove 1f1e
+info time 3 depth 3 nodes 1755 score cp -6 pv 1f1e 5d4c 6g6f
+info currmove 1f1e
+info currmove 1f1e
+info time 7 depth 4 nodes 5709 score cp -10 pv 1f1e 5d4c 6g6f 4a5b
+info currmove 1f1e
+info time 17 nodes 15961 score cp -10 pv 1f1e 5d4c 6g6f 4a5b
+bestmove 1f1e
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b
+go btime 0 wtime 0 byoyomi 5000
+info currmove 6g6f
+info time 0 depth 1 nodes 4 score cp 8 pv 6g6f
+info currmove 6g6f
+info currmove 6g6f
+info time 0 depth 2 nodes 118 score cp -8 pv 6g6f 5d4c
+info currmove 6g6f
+info currmove 6g6f
+info time 1 depth 3 nodes 1818 score cp -6 pv 6g6f 5d4c 6f6e
+info currmove 6g6f
+info currmove 6g6f
+info time 3 depth 4 nodes 6749 score cp -11 pv 6g6f 7b8b 5g5f 5d4c
+info currmove 6g6f
+info time 5 depth 4 nodes 10155 score cp -10 pv 2g2f 5d4c 2f2e 4a5b
+info time 11 nodes 19480 score cp -10 pv 2g2f 5d4c 2f2e 4a5b
+bestmove 2g2f
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b
+go btime 0 wtime 0 byoyomi 5000
+info currmove 2f2e
+info time 0 depth 1 nodes 3 score cp 6 pv 2f2e
+info currmove 2f2e
+info time 1 depth 2 nodes 120 score cp -10 pv 2f2e 5d4c
+info currmove 2f2e
+info currmove 2f2e
+info time 1 depth 3 nodes 1857 score cp 2 pv 2f2e 5d4c 2e2d
+info currmove 2f2e
+info currmove 2f2e
+info time 4 depth 4 nodes 6034 score cp -13 pv 2f2e 5d4c 8g8f 4a5b
+info currmove 2f2e
+info time 8 nodes 16718 score cp -13 pv 2f2e 5d4c 8g8f 4a5b
+bestmove 2f2e
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c
+go btime 0 wtime 0 byoyomi 5000
+info currmove 7g7f
+info time 1 depth 1 nodes 4 score cp 7 pv 7g7f
+info currmove 7g7f
+info currmove 7g7f
+info time 1 depth 2 nodes 126 score cp -9 pv 7g7f 5d4c
+info currmove 7g7f
+info currmove 7g7f
+info time 2 depth 3 nodes 2172 score cp -7 pv 7g7f 5d4c 7f7e
+info currmove 7g7f
+info currmove 7g7f
+info time 5 depth 4 nodes 6683 score cp -11 pv 7g7f 5d4c 7f7e 7a7b
+info currmove 7g7f
+info time 11 nodes 19349 score cp -11 pv 7g7f 5d4c 7f7e 7a7b
+bestmove 7g7f
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b
+go btime 0 wtime 0 byoyomi 5000
+info currmove 7f7e
+info time 1 depth 1 nodes 4 score cp 5 pv 7f7e
+info currmove 7f7e
+info currmove 7f7e
+info time 1 depth 2 nodes 131 score cp -11 pv 7f7e 5d4c
+info currmove 7f7e
+info currmove 7f7e
+info time 2 depth 3 nodes 2166 score cp -10 pv 7f7e 5d4c 4g4f
+info currmove 7f7e
+info time 3 depth 3 nodes 3934 score cp -9 pv 7h7g 5d4c 6h7h
+info currmove 7f7e
+info time 6 depth 4 nodes 7763 score cp -14 pv 7f7e 5d4c 4g4f 4a5b
+info currmove 7h7g
+info time 7 depth 4 nodes 10586 score cp -13 pv 7h7g 5d4c 6h7h 4a5b
+info time 17 nodes 28879 score cp -13 pv 7h7g 5d4c 6h7h 4a5b
+bestmove 7h7g
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b
+go btime 0 wtime 0 byoyomi 5000
+info currmove 6h7h
+info time 0 depth 1 nodes 4 score cp 3 pv 6h7h
+info currmove 6h7h
+info currmove 6h7h
+info time 0 depth 2 nodes 125 score cp -13 pv 6h7h 5d4c
+info currmove 6h7h
+info currmove 6h7h
+info time 1 depth 3 nodes 1944 score cp -11 pv 6h7h 5d4c 7f7e
+info currmove 6h7h
+info currmove 6h7h
+info time 3 depth 4 nodes 6163 score cp -13 pv 6h7h 5d4c 7f7e 4d4e
+info currmove 6h7h
+info time 11 nodes 21238 score cp -13 pv 6h7h 5d4c 7f7e 4d4e
+bestmove 6h7h
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b 6h7h 7c7d
+go btime 0 wtime 0 byoyomi 5000
+info currmove 5g5f
+info time 0 depth 1 nodes 4 score cp 3 pv 5g5f
+info currmove 5g5f
+info currmove 5g5f
+info time 1 depth 2 nodes 126 score cp -13 pv 5g5f 5d4c
+info currmove 5g5f
+info currmove 5g5f
+info time 3 depth 3 nodes 2012 score cp -11 pv 5g5f 5d4c 5f5e
+info currmove 5g5f
+info currmove 5g5f
+info time 7 depth 4 nodes 7332 score cp -14 pv 5g5f 4d4e 9g9f 5d4c
+info currmove 5g5f
+info time 8 depth 4 nodes 9306 score cp -13 pv 4g4f 5d4c 9g9f 5c5d
+info time 13 depth 4 nodes 19139 score cp -2 pv 7g6f 6c6d 7f7e 7d7e
+info time 18 depth 4 nodes 25308 score cp -1 pv 7g8f 8c8d 8h6f 7b8c
+info time 21 nodes 30970 score cp -1 pv 7g8f 8c8d 8h6f 7b8c
+bestmove 7g8f
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b 6h7h 7c7d 7g8f 6c6d
+go btime 0 wtime 0 byoyomi 5000
+info currmove 8f8e
+info time 1 depth 1 nodes 3 score cp 1 pv 8f8e
+info time 1 depth 1 nodes 42 score cp 3 pv 7f7e
+info currmove 7f7e
+info time 1 depth 2 nodes 145 score cp -2 pv 7f7e 7d7e
+info currmove 8f8e
+info time 1 depth 2 nodes 213 score cp 0 pv 8f8e 5b6c
+info currmove 7f7e
+info time 4 depth 3 nodes 2659 score cp 1 pv 7f7e 7d7e 8f7e
+info currmove 8f8e
+info time 5 depth 3 nodes 4019 score cp 2 pv 8f8e 5b6c 7f7e
+info currmove 8f8e
+info time 11 depth 4 nodes 9786 score cp -3 pv 8f8e 5b6c 7f7e 7d7e
+info currmove 8f8e
+info time 13 depth 4 nodes 12946 score cp -1 pv 7f7e 7d7e 8f7e 6d6e
+info time 32 nodes 41924 score cp -1 pv 7f7e 7d7e 8f7e 6d6e
+bestmove 7f7e
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b 6h7h 7c7d 7g8f 6c6d 7f7e 7d7e
+go btime 0 wtime 0 byoyomi 5000
+info currmove 8f7e
+info time 0 depth 1 nodes 4 score cp 1 pv 8f7e
+info currmove 8f7e
+info currmove 8f7e
+info time 0 depth 2 nodes 152 score cp -1 pv 8f7e 6d6e
+info currmove 8f7e
+info currmove 8f7e
+info time 2 depth 3 nodes 1785 score cp 9 pv 8f7e 6d6e P*7d
+info currmove 8f7e
+info currmove 8f7e
+info time 8 depth 4 nodes 9373 score cp -6 pv 8f7e 5b6c P*7d 5d4c
+info currmove 8f7e
+info time 31 nodes 47139 score cp -6 pv 8f7e 5b6c P*7d 5d4c
+bestmove 8f7e
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b 6h7h 7c7d 7g8f 6c6d 7f7e 7d7e 8f7e 5b4c
+go btime 0 wtime 0 byoyomi 5000
+info currmove 7e6d
+info time 0 depth 1 nodes 4 score cp 221 pv 7e6d
+info currmove 7e6d
+info currmove 7e6d
+info time 0 depth 2 nodes 161 score cp 211 pv 7e6d P*7f
+info currmove 7e6d
+info currmove 7e6d
+info time 4 depth 3 nodes 3147 score cp -185 pv 7e6d 7b6c 6d5d
+info currmove 7e6d
+info time 5 depth 3 nodes 4542 score cp 14 pv 7e7d 6d6e 8g8f
+info time 5 depth 3 nodes 5645 score cp 24 pv P*7d 6d6e 6g6f
+info time 6 depth 3 nodes 7231 score cp 26 pv 6g6f 5d6c P*7d
+info currmove 7e6d
+info time 12 depth 4 nodes 13396 score cp -175 pv 7e6d 7b6c 6d6c 5d6c
+info currmove 6g6f
+info time 14 depth 4 nodes 16816 score cp 24 pv 6g6f 5d6c P*7d 4d4e
+info time 39 nodes 53575 score cp 24 pv 6g6f 5d6c P*7d 4d4e
+bestmove 6g6f
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b 6h7h 7c7d 7g8f 6c6d 7f7e 7d7e 8f7e 5b4c 6g6f 7b6c
+go btime 0 wtime 0 byoyomi 5000
+info currmove P*7d
+info time 0 depth 1 nodes 4 score cp 40 pv P*7d
+info currmove P*7d
+info currmove P*7d
+info time 1 depth 2 nodes 154 score cp 38 pv P*7d 6a7b
+info currmove P*7d
+info currmove P*7d
+info time 2 depth 3 nodes 2890 score cp -164 pv P*7d 4b7b 5g5f
+info currmove P*7d
+info time 3 depth 3 nodes 4410 score cp 27 pv 8g8f 4b7b P*7f
+info time 4 depth 3 nodes 6099 score cp 31 pv 9g9f 4b7b 8h9g
+info currmove P*7d
+info time 8 depth 4 nodes 11518 score cp 26 pv P*7d 4b7b 5g5f 6c7d
+info currmove 9g9f
+info time 30 nodes 46214 score cp 26 pv P*7d 4b7b 5g5f 6c7d
+bestmove P*7d
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b 6h7h 7c7d 7g8f 6c6d 7f7e 7d7e 8f7e 5b4c 6g6f 7b6c P*7d 4b7b
+go btime 0 wtime 0 byoyomi 5000
+info currmove 5g5f
+info time 0 depth 1 nodes 4 score cp -168 pv 5g5f
+info currmove 5g5f
+info time 0 depth 1 nodes 48 score cp -164 pv 7i6h
+info currmove 7i6h
+info time 0 depth 2 nodes 152 score cp 20 pv 7i6h 6c7d
+info currmove 5g5f
+info currmove 7i6h
+info time 2 depth 3 nodes 1698 score cp -164 pv 7i6h 6a5b 6h7g
+info currmove 7i6h
+info time 6 depth 3 nodes 3621 score cp -158 pv 3g2f 6a5b 2e2d
+info currmove 7i6h
+info time 21 depth 4 nodes 16104 score cp 11 pv 7i6h 6c7d 7e6d P*7f
+info currmove 3g2f
+info time 43 nodes 46970 score cp 11 pv 7i6h 6c7d 7e6d P*7f
+bestmove 7i6h
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b 6h7h 7c7d 7g8f 6c6d 7f7e 7d7e 8f7e 5b4c 6g6f 7b6c P*7d 4b7b 7i6h 6c7d
+go btime 0 wtime 0 byoyomi 5000
+info currmove 7e6d
+info time 0 depth 1 nodes 4 score cp 21 pv 7e6d
+info currmove 7e6d
+info currmove 7e6d
+info time 1 depth 2 nodes 174 score cp 11 pv 7e6d P*7f
+info currmove 7e6d
+info currmove 7e6d
+info time 3 depth 3 nodes 2164 score cp -2423 pv 7e6d 7d6c P*7c
+info currmove 7e6d
+info time 6 depth 3 nodes 4653 score cp -584 pv 7e7d 7b7d 6h7g
+info time 8 depth 3 nodes 6194 score cp -194 pv 7e7f 7d7e 7f7g
+info currmove 7e6d
+info time 19 depth 4 nodes 16354 score cp -189 pv 7e6d 5d6c P*7c 8a7c
+info currmove 7e7f
+info time 64 nodes 71239 score cp -189 pv 7e6d 5d6c P*7c 8a7c
+bestmove 7e6d
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b 6h7h 7c7d 7g8f 6c6d 7f7e 7d7e 8f7e 5b4c 6g6f 7b6c P*7d 4b7b 7i6h 6c7d 7e6d 7d6c
+go btime 0 wtime 0 byoyomi 5000
+info currmove P*7c
+info time 0 depth 1 nodes 4 score cp -2423 pv P*7c
+info currmove P*7c
+info currmove P*7c
+info time 0 depth 2 nodes 111 score cp -183 pv P*7c 8a7c
+info currmove P*7c
+info currmove P*7c
+info time 1 depth 3 nodes 1725 score cp -591 pv P*7c 8a7c 6f6e
+info currmove P*7c
+info currmove P*7c
+info time 5 depth 4 nodes 5317 score cp -581 pv P*7c 8a7c 6f6e 6c6d
+info currmove P*7c
+info time 29 nodes 32118 score cp -581 pv P*7c 8a7c 6f6e 6c6d
+bestmove P*7c
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b 6h7h 7c7d 7g8f 6c6d 7f7e 7d7e 8f7e 5b4c 6g6f 7b6c P*7d 4b7b 7i6h 6c7d 7e6d 7d6c P*7c 8a7c
+go btime 0 wtime 0 byoyomi 5000
+info currmove 6f6e
+info time 0 depth 1 nodes 4 score cp -591 pv 6f6e
+info currmove 6f6e
+info currmove 6f6e
+info time 0 depth 2 nodes 171 score cp -581 pv 6f6e 6c6d
+info currmove 6f6e
+info currmove 6f6e
+info time 2 depth 3 nodes 1913 score cp -2849 pv 6f6e 7c6e 6d7c
+info currmove 6f6e
+info time 5 depth 3 nodes 5399 score cp -603 pv 6d5d 7c8e 8i7g
+info time 8 depth 3 nodes 8442 score cp -588 pv 6d6c 5d6c 6h7g
+info currmove 6d6c
+info time 13 depth 4 nodes 16891 score cp -594 pv 6d6c 5d6c 6h7g 6c7d
+info currmove 6f6e
+info time 73 nodes 90823 score cp -594 pv 6d6c 5d6c 6h7g 6c7d
+bestmove 6d6c
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b 6h7h 7c7d 7g8f 6c6d 7f7e 7d7e 8f7e 5b4c 6g6f 7b6c P*7d 4b7b 7i6h 6c7d 7e6d 7d6c P*7c 8a7c 6d6c 5d6c
+go btime 0 wtime 0 byoyomi 5000
+info currmove 6h7g
+info time 1 depth 1 nodes 4 score cp -588 pv 6h7g
+info currmove 6h7g
+info currmove 6h7g
+info time 1 depth 2 nodes 302 score cp -594 pv 6h7g 6c7d
+info currmove 6h7g
+info currmove 6h7g
+info time 16 depth 3 nodes 20003 score cp -1199 pv 6h7g 7c8e 3g2f
+info currmove 6h7g
+info time 20 depth 3 nodes 25989 score cp -597 pv 3g2f P*7f 3f3e
+info currmove 6h7g
+info time 38 depth 4 nodes 47715 score cp -1199 pv 6h7g 7c8e 3g2f 8e7g+
+info currmove 3g2f
+info time 44 depth 4 nodes 57100 score cp -603 pv 3g2f P*7f 3f3e 6c7d
+info time 65 depth 4 nodes 88912 score cp -602 pv 8g8f 6c7d 6h7g 7d7e
+info time 114 depth 4 nodes 163221 score cp -601 pv 8h7i P*7f 7h8h 6c7d
+info time 157 nodes 217988 score cp -601 pv 8h7i P*7f 7h8h 6c7d
+bestmove 8h7i
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b 6h7h 7c7d 7g8f 6c6d 7f7e 7d7e 8f7e 5b4c 6g6f 7b6c P*7d 4b7b 7i6h 6c7d 7e6d 7d6c P*7c 8a7c 6d6c 5d6c 8h7i 7c8e
+go btime 0 wtime 0 byoyomi 5000
+info currmove 7h8h
+info time 0 depth 1 nodes 4 score cp -585 pv 7h8h
+info currmove 7h8h
+info currmove 7h8h
+info time 0 depth 2 nodes 205 score cp -595 pv 7h8h P*7h
+info currmove 7h8h
+info currmove 7h8h
+info time 5 depth 3 nodes 6243 score cp -4076 pv 7h8h P*7h 3g2f
+info currmove 7h8h
+info time 10 depth 3 nodes 12019 score cp -4010 pv 7h6i G*7h 6i5i
+info time 15 depth 3 nodes 17688 score cp -2321 pv 7h6g 7b7i+ 6h7i
+info time 20 depth 3 nodes 23457 score cp -2192 pv 8i7g 8e7g+ 6h7g
+info currmove 7h8h
+info time 32 depth 4 nodes 39659 score cp -3997 pv 7h8h G*7h 8h9h 7h7i
+info currmove 8i7g
+info time 41 depth 4 nodes 49907 score cp -2657 pv 8i7g 8e7g+ 6h7g G*4i
+info time 52 nodes 61968 score cp -2657 pv 8i7g 8e7g+ 6h7g G*4i
+bestmove 8i7g
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b 6h7h 7c7d 7g8f 6c6d 7f7e 7d7e 8f7e 5b4c 6g6f 7b6c P*7d 4b7b 7i6h 6c7d 7e6d 7d6c P*7c 8a7c 6d6c 5d6c 8h7i 7c8e 8i7g 8e7g+
+go btime 0 wtime 0 byoyomi 5000
+info currmove 6h7g
+info time 0 depth 1 nodes 4 score cp -1631 pv 6h7g
+info currmove 6h7g
+info currmove 6h7g
+info time 0 depth 2 nodes 249 score cp -2084 pv 6h7g G*4i
+info currmove 6h7g
+info currmove 6h7g
+info time 9 depth 3 nodes 11646 score cp -2079 pv 6h7g N*8e S*6h
+info currmove 6h7g
+info currmove 6h7g
+info time 68 depth 4 nodes 54881 score cp -2311 pv 6h7g P*7f 7g8h G*7g
+info currmove 6h7g
+info time 82 nodes 68547 score cp -2311 pv 6h7g P*7f 7g8h G*7g
+bestmove 6h7g
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b 6h7h 7c7d 7g8f 6c6d 7f7e 7d7e 8f7e 5b4c 6g6f 7b6c P*7d 4b7b 7i6h 6c7d 7e6d 7d6c P*7c 8a7c 6d6c 5d6c 8h7i 7c8e 8i7g 8e7g+ 6h7g N*8e
+go btime 0 wtime 0 byoyomi 5000
+info currmove S*6h
+info time 0 depth 1 nodes 4 score cp -1223 pv S*6h
+info currmove N*5e
+info time 0 depth 1 nodes 123 score cp -1168 pv 7i8h
+info currmove 7i8h
+info time 1 depth 2 nodes 380 score cp -1168 pv 7i8h 8e7g+
+info currmove N*5e
+info time 1 depth 2 nodes 554 score cp -178 pv N*5e 8e7g+
+info currmove 7i8h
+info time 11 depth 3 nodes 8971 score cp -2790 pv 7i8h 8e7g+ 8h7g
+info currmove N*5e
+info time 15 depth 3 nodes 13928 score cp -2640 pv S*8f 8e7g+ 8f7g
+info currmove S*8f
+info time 23 depth 4 nodes 24466 score cp -3162 pv S*8f 8e7g+ 8f7g S*7f
+info currmove N*5e
+info time 41 depth 4 nodes 40340 score cp -2414 pv N*5e 7b7g+ 7h8i 7g7i
+info time 67 nodes 69555 score cp -2414 pv N*5e 7b7g+ 7h8i 7g7i
+bestmove N*5e
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b 6h7h 7c7d 7g8f 6c6d 7f7e 7d7e 8f7e 5b4c 6g6f 7b6c P*7d 4b7b 7i6h 6c7d 7e6d 7d6c P*7c 8a7c 6d6c 5d6c 8h7i 7c8e 8i7g 8e7g+ 6h7g N*8e N*5e 7b7g+
+go btime 0 wtime 0 byoyomi 5000
+info currmove 7h8i
+info time 0 depth 1 nodes 3 score cp -3052 pv 7h8i
+info currmove 7h8i
+info time 0 depth 2 nodes 272 score cp -2237 pv 7h8i 7g7i
+info currmove 7h8i
+info currmove 7h8i
+info time 10 depth 3 nodes 8446 score cp -6677 pv 7h8i S*7h 8i9h
+info currmove 7h8i
+info currmove 7h8i
+info time 39 depth 4 nodes 33881 score cp -3727 pv 7h8i S*7h 8i9h 7h7i+
+info currmove 7h8i
+info time 40 nodes 34331 score cp -3727 pv 7h8i S*7h 8i9h 7h7i+
+bestmove 7h8i
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b 6h7h 7c7d 7g8f 6c6d 7f7e 7d7e 8f7e 5b4c 6g6f 7b6c P*7d 4b7b 7i6h 6c7d 7e6d 7d6c P*7c 8a7c 6d6c 5d6c 8h7i 7c8e 8i7g 8e7g+ 6h7g N*8e N*5e 7b7g+ 7h8i 7g8g
+go btime 0 wtime 0 byoyomi 5000
+info currmove S*8h
+info time 0 depth 1 nodes 4 score cp -3104 pv S*8h
+info currmove S*8h
+info time 0 depth 1 nodes 10 score cp -3052 pv 7i8h
+info currmove S*8h
+info time 0 depth 2 nodes 280 score cp -852 pv S*8h 8g8h
+info currmove 7i8h
+info currmove S*8h
+info time 1 depth 3 nodes 1106 score mate - pv S*8h S*7h 8h8g
+info currmove 7i8h
+info currmove S*8h
+info time 5 depth 4 nodes 4088 score mate - pv S*8h S*7h 7i8h 6c5d
+info time 14 nodes 12426 score mate - pv S*8h S*7h 7i8h 6c5d
+bestmove S*8h
+position startpos moves 6i7h 3c3d 5i6h 4c4d 4i5h 8b4b 3i4h 3a3b 3g3f 5a6b 4h3g 3b4c 1g1f 4c5d 1f1e 6b7b 2g2f 7b8b 2f2e 2b3c 7g7f 7a7b 7h7g 4a5b 6h7h 7c7d 7g8f 6c6d 7f7e 7d7e 8f7e 5b4c 6g6f 7b6c P*7d 4b7b 7i6h 6c7d 7e6d 7d6c P*7c 8a7c 6d6c 5d6c 8h7i 7c8e 8i7g 8e7g+ 6h7g N*8e N*5e 7b7g+ 7h8i 7g8g S*8h 8e7g
+go btime 0 wtime 0 byoyomi 5000
+bestmove resign
