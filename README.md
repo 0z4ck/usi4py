@@ -29,8 +29,8 @@ I made this script because all existing "engine_handlers" were for windows only.
 - [x] Basic USI engines support
 - [x] Byoyomi setting
 - [x] Save result as json
+- [x] Eval&Book files setting (by specifying the engine directory) 
 - [ ] Bonanza protocol support
-- [ ] Eval&Book files setting 
 - [ ] btime, wtime setting
 - [ ] hash size setting
 - [ ] number of threads setting
