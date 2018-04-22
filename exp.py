@@ -50,13 +50,12 @@ def dumpResult(winner, loser, sente):
 
 
 
-def start_engine(engine_path, directory, conn, byoyomi, sente=True):
+def start_engine(engine_path, directory, engine_name, conn, byoyomi, sente=True):
 
     p= pexpect.spawn(engine_path,cwd=directory);
-    engine_name = engine_path.split("/")[-1];
-    #fout = open('log/'+engine_name+'.log','wb');
-    p.logfile = sys.stdout;
-    #p.logfile = fout;
+    fout = open('log/'+engine_name+'.log','wb');
+    #p.logfile = sys.stdout;
+    p.logfile = fout;
     p.setecho(False);
     p.send("usi\n");
     p.expect("usiok");
@@ -96,9 +95,9 @@ def start_engine(engine_path, directory, conn, byoyomi, sente=True):
 if __name__ == '__main__':
     cfg = json.loads(open("config.json","r").read());
     p1_conn, p2_conn = Pipe();
-    p1 = Process(target=start_engine, args=([cfg["engine1"],cfg["directory1"], p1_conn, cfg["byoyomi"]]));
+    p1 = Process(target=start_engine, args=([cfg["engine1"], cfg["directory1"], cfg["engine_name1"], p1_conn, cfg["byoyomi"]]));
     p1.start();
-    p2 = Process(target=start_engine, args=([cfg["engine2"],cfg["directory2"], p2_conn, cfg["byoyomi"], False]));
+    p2 = Process(target=start_engine, args=([cfg["engine2"], cfg["directory2"], cfg["engine_name2"], p2_conn, cfg["byoyomi"], False]));
     p2.start();
 
 

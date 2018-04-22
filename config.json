@@ -1,12 +1,15 @@
 {
-
     "engine1": "/path/to/engines/Lesserkai",
 
     "directory1": "/directory/of/books_and_evals/",
 
+    "engine_name1": "Lesserkai",
+
     "engine2": "/path/to/engines/gpsfish",
 
     "directory2": "/directory/of/books_and_evals/",
+
+    "engine_name2": "GPSFish",
 
     "byoyomi": 5000
 
