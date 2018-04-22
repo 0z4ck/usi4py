@@ -5,8 +5,8 @@ from multiprocessing import Process, Pipe
 
 
 def getBestmove(moves, p, btime, wtime, byoyomi):
-    p.sendline("position startpos{}".format(moves));
-    string = "go btime {} wtime {} byoyomi {}".format(btime,wtime,byoyomi);
+    p.sendline("position startpos{0}".format(moves));
+    string = "go btime {0} wtime {1} byoyomi {2}".format(btime,wtime,byoyomi);
     p.sendline(string);
     p.expect("bestmove......");
     if p.after[-1]=="+":
