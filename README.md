@@ -1,3 +1,7 @@
+# UPDATE 
+I found https://github.com/ai5/shogi_repeat which seems better, so I'm switching to this.
+
+
 # usi4py
 
 A simple python script to organize games between usi_engines. 
