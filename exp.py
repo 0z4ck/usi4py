@@ -9,10 +9,11 @@ def getBestmove(moves, p, btime, wtime, byoyomi):
     string = "go btime {0} wtime {1} byoyomi {2}".format(btime,wtime,byoyomi);
     p.sendline(string);
     p.expect("bestmove......");
-    if p.after[-1]=="+":
-        return p.after[-5:];
+    bm_str = p.after.replace("\r"," ")
+    if bm_str[-1]=="+":
+        return bm_str[-5:];
     else:
-        return p.after[-5:-1];
+        return bm_str[-5:-1];
 
 
 
@@ -59,6 +60,8 @@ def start_engine(engine_path, directory, engine_name, conn, byoyomi, sente=True)
     p.setecho(False);
     p.send("usi\n");
     p.expect("usiok");
+    p.send("setoption name USI_Ponder value false\n");
+    p.send("setoption name USI_Hash value 256\n");
     p.send("isready\n");
     p.expect("readyok");
     p.send("usinewgame\n");
@@ -77,7 +80,7 @@ def start_engine(engine_path, directory, engine_name, conn, byoyomi, sente=True)
     while 1:
         om = conn.recv(); #opponent's move
         if om == "resi":
-            print "I won !! ";
+            print engine_name+": I won !! ";
             o_engine_name = conn.recv(); #opponent's engine_name
             dumpResult(engine_name, o_engine_name, sente);
             break;
@@ -86,7 +89,7 @@ def start_engine(engine_path, directory, engine_name, conn, byoyomi, sente=True)
         conn.send(bm);
         if bm == "resi":
             conn.send(engine_name);  # send the engine_name to the winner
-            print "I lost !! ";
+            print engine_name+": I lost !! ";
             break;
         moves=" ".join([moves,bm]);
 
