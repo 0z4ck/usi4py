@@ -19,10 +19,6 @@ class UsiClient():
             self.p.expect("usiok");
             self.p.send("setoption name USI_Ponder value false\n");
             self.p.send("setoption name USI_Hash value {0}\n".format(usi_hash));
-            self.p.send("setoption name Byoyomi_Margin value 0\n");
-            self.p.send("setoption name ByoyomiMargin value 0\n");
-            self.p.send("setoption name NetworkDelay value 0\n");
-            self.p.send("setoption name NetworkDelay2 value 0\n");
             self.p.send("isready\n");
             self.p.expect("readyok");
         except Exception as e:
