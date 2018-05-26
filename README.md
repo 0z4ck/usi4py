@@ -62,5 +62,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> e.newgame()
 >>>
 >>> e.go(" moves 2g2f 4a3b 2f2e",0,0,10000)
-
 '''
