@@ -1,6 +1,7 @@
 # UPDATE 
-I found https://github.com/ai5/shogi_repeat which seems better, so I'm switching to this.
-
+~~I found https://github.com/ai5/shogi_repeat which seems better, so I'm switching to this.~~
+#### REUPDATE
+ /ai5/shogi_repeat seems to have unstable memory issue 
 
 # usi4py
 
@@ -35,7 +36,7 @@ I made this script because all existing "engine_handlers" were for windows only.
 - [ ] Bonanza protocol support
 - [x] btime, wtime setting
 - [x] hash size setting
-- [ ] number of threads setting      Note: the option name differs on each engine. to implement, edit initialize()
+- [ ] number of threads setting      ( Note: the option name differs on each engine. to implement, edit initialize() function )
 
 
 
@@ -62,4 +63,5 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> e.newgame()
 >>>
 >>> e.go(" moves 2g2f 4a3b 2f2e",0,0,10000)
-'''
+
+```
