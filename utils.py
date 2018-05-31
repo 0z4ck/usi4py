@@ -2,13 +2,13 @@ import json
 
 
 
-def dumpResult(winner, loser, sente):
+def dumpResult(black, white, sente):
     if sente:
-        black = winner;
-        white = loser;
+        winner = black 
+        loser = white;
     else:
-        black = loser;
-        white = winner;
+        loser = black;
+        winner = white;
 
     result_dict = json.loads(open("results.json","r").read());
 

@@ -46,7 +46,7 @@ if __name__ == '__main__':
         moves += " " + bm
 
         if bm == "resi":
-            if move_num%2 == 0:
+            if move_num%2 == 1:
                 logger.info("gote won")
                 sente = False
             else:
