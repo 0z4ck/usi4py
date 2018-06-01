@@ -1,6 +1,6 @@
 
 
-## This branch is canonical mode
+## This branch is non-canonical mode
 
 it might be better for mac users to use this branch to avoid [this issue](https://stackoverflow.com/questions/9218499/pexpect-cant-pass-input-over-1024-chars)
 
