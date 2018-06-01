@@ -1,7 +1,10 @@
-# UPDATE 
-~~I found https://github.com/ai5/shogi_repeat which seems better, so I'm switching to this.~~
-#### REUPDATE
- /ai5/shogi_repeat seems to have unstable memory issue 
+
+
+## This branch is canonical mode
+
+it might be better for mac users to use this branch to avoid [this issue](https://stackoverflow.com/questions/9218499/pexpect-cant-pass-input-over-1024-chars)
+
+
 
 # usi4py
 
