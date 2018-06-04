@@ -1,5 +1,6 @@
 import logging
 import pexpect
+import re
 
 
 
@@ -13,12 +14,14 @@ class UsiClient():
         self.engine = engine
         self.path = path
 
-    def initialize(self, usi_hash=256):
+    def setOptions(self, options):
+        for key in options:
+            self.p.send("setoption name {0} value {1}\n".format(key, options[key]));
+
+    def initialize(self):
         try :
             self.p.send("usi\n");
             self.p.expect("usiok");
-            self.p.send("setoption name USI_Ponder value false\n");
-            self.p.send("setoption name USI_Hash value {0}\n".format(usi_hash));
             self.p.send("isready\n");
             self.p.expect("readyok");
         except Exception as e:
@@ -33,10 +36,16 @@ class UsiClient():
         self.p.sendline("position startpos{0}".format(moves));
         string = "go btime {0} wtime {1} byoyomi {2}".format(btime,wtime,byoyomi);
         self.p.sendline(string);
-        self.p.expect("bestmove......");
+        self.p.expect("bestmove ([0-9a-i+*PLNSGRBresign]+)");
+        try:
+            inf = self.p.before.split("\n")[-2]
+            m = re.search(r"score cp ([0-9\-mate]+)",inf)
+            self.logger.info("  SCORE : {}".format(m.group(1)))
+        except:
+            try:
+                m = re.search(r"score ([0-9\-mate]+)",inf)
+                self.logger.info("  SCORE : {}".format(m.group(1)))
+            except:
+                self.logger.debug("no score given, maybe joseki move")
         bm_str = self.p.after.replace("\r"," ")
-        print bm_str[-5:]
-        if bm_str[-1]=="+":
-            return bm_str[-5:];
-        else:
-            return bm_str[-5:-1];
+        return bm_str[9:]
