@@ -1,7 +1,4 @@
-# UPDATE 
-~~I found https://github.com/ai5/shogi_repeat which seems better, so I'm switching to this.~~
-#### REUPDATE
- /ai5/shogi_repeat seems to have unstable memory issue 
+
 
 # usi4py
 
@@ -22,9 +19,10 @@ I made this script because all existing "engine_handlers" were for windows only.
 
 ### Dependencies
 
-* python 2.7
-* pexpect
+* python
 * json
+* re
+* pexpect
 * ~~multiprocessing~~ not used anymore (deleted at 9e287e4b5445825be12589f02d00b47cbf870b3e)
 
 
