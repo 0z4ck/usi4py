@@ -1,5 +1,6 @@
 import logging
 import pexpect
+import sys
 
 
 
@@ -8,9 +9,12 @@ class UsiClient():
     def __init__(self, engine, path):
         self.logger = logging.getLogger(__name__)
         self.logger.debug("launching the engine via pexpect.")
-        self.p = pexpect.spawn("/bin/bash",cwd=path);
-        self.p.sendline("stty -icanon");
-        self.p.sendline(engine);
+        if sys.platform == "darwin":
+            self.p = pexpect.spawn("/bin/bash",cwd=path);
+            self.p.sendline("stty -icanon");
+            self.p.sendline(engine);
+        else:
+            self.p = pexpect.spawn(engine,cwd=path);
         self.p.setecho(False);
         self.engine = engine
         self.path = path

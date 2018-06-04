@@ -1,11 +1,5 @@
 
 
-## This branch is non-canonical mode
-
-it might be better for mac users to use this branch to avoid [this issue](https://stackoverflow.com/questions/9218499/pexpect-cant-pass-input-over-1024-chars)
-
-
-
 # usi4py
 
 A simple python script to organize games between usi_engines. 
@@ -25,9 +19,10 @@ I made this script because all existing "engine_handlers" were for windows only.
 
 ### Dependencies
 
-* python 2.7
-* pexpect
+* python
 * json
+* re
+* pexpect
 * ~~multiprocessing~~ not used anymore (deleted at 9e287e4b5445825be12589f02d00b47cbf870b3e)
 
 
