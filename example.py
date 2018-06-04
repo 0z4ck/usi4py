@@ -21,8 +21,10 @@ if __name__ == '__main__':
     e2.p.logfile = fout2;
 
     e1.initialize()                                        # initialize sente engine 
+    e1.setOptions({"USI_Hash":256,"USI_Ponder":str(False).lower()})
     e1.newgame()
     e2.initialize()                                        # initialize gote engine
+    e2.setOptions({"USI_Hash":256,"USI_Ponder":str(False).lower()})
     e2.newgame()
 
     move_num = 0
