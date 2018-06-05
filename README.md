@@ -34,7 +34,8 @@ I made this script because all existing "engine_handlers" were for windows only.
 - [ ] Bonanza protocol support
 - [x] btime, wtime setting
 - [x] hash size setting
-- [ ] number of threads setting      ( Note: the option name differs on each engine. to implement, edit initialize() function )
+- [x] ponder support
+- [ ] number of threads setting      ( Note: the option name differs on each engine. to implement, edit setOptions() function )
 
 
 

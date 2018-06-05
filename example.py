@@ -33,7 +33,7 @@ if __name__ == '__main__':
     while True:
 
         if move_num == 0:      # sente's first move 
-            bm = e1.go(moves,0,0,100)
+            bm,pond = e1.go(moves,0,0,100)
             move_num+=1
             moves += " moves " + bm
 
@@ -43,7 +43,7 @@ if __name__ == '__main__':
         elif move_num%2 == 1:   # gote's turn
             turn = e2
 
-        bm = turn.go(moves,0,0,100)
+        bm,pond = turn.go(moves,0,0,100)
         move_num+=1
         moves += " " + bm
 

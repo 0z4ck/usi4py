@@ -56,4 +56,40 @@ class UsiClient():
             except:
                 self.logger.debug("no score given, maybe joseki move")
         bm_str = self.p.after.replace("\r"," ")
-        return bm_str[9:]
+        if "ponder" in self.p.buffer:
+            pond = re.search(r"ponder ([0-9a-i+*PLNSGRB]+)", self.p.buffer).group(1)
+            print pond
+            return bm_str[9:], pond
+        else:
+            return bm_str[9:], None
+
+    def goPonder(self, moves, btime, wtime, byoyomi):
+        self.p.sendline("position startpos{0}".format(moves));
+        string = "go ponder bime {0} wtime {1} byoyomi {2}".format(btime,wtime,byoyomi);
+        self.p.sendline(string);
+
+    def ponderHit(self):
+        self.p.sendline("ponderhit");
+        self.p.expect("bestmove ([0-9a-i+*PLNSGRBresign]+)");
+        try:
+            inf = self.p.before.split("\n")[-2]
+            m = re.search(r"score cp ([0-9\-mate]+)",inf)
+            self.logger.info("  SCORE : {}".format(m.group(1)))
+        except:
+            try:
+                m = re.search(r"score ([0-9\-mate]+)",inf)
+                self.logger.info("  SCORE : {}".format(m.group(1)))
+            except:
+                self.logger.error(" could not parse score")
+        bm_str = self.p.after.replace("\r"," ")
+        print bm_str[9:]
+        if "ponder" in self.p.buffer:
+            pond = re.search(r"ponder ([0-9a-i+*PLNSGRB]+)", self.p.buffer).group(1)
+            print pond
+            return bm_str[9:], pond
+        else:
+            return bm_str[9:], None
+
+    def ponderStop(self):
+        self.p.sendline("stop");
+        self.p.expect("bestmove ([0-9a-i+*PLNSGRBresign]+)");
