@@ -2,6 +2,7 @@ import logging
 import pexpect
 import re
 import sys
+import time
 
 
 
@@ -62,6 +63,31 @@ class UsiClient():
             return bm_str[9:], pond
         else:
             return bm_str[9:], None
+
+    def goInfinite(self, moves, ponder=False):
+        self.p.sendline("position startpos{0}".format(moves));
+        string = "go infinite";
+        self.p.sendline(string);
+
+    def stop(self):
+        self.p.sendline("stop");
+        self.p.expect("bestmove......");
+        try:
+            inf = self.p.before.split("\n")[-2]
+            m = re.search(r"score cp ([0-9\-mate]+)",inf)
+            self.logger.info("  SCORE : {}".format(m.group(1)))
+        except:
+            try:
+                m = re.search(r"score ([0-9\-mate]+)",inf)
+                self.logger.info("  SCORE : {}".format(m.group(1)))
+            except:
+                self.logger.error(" could not parse score")
+        bm_str = self.p.after.replace("\r"," ")
+        print bm_str[-5:]
+        if bm_str[-1]=="+":
+            return bm_str[-5:];
+        else:
+            return bm_str[-5:-1];
 
     def goPonder(self, moves, btime, wtime, byoyomi):
         self.p.sendline("position startpos{0}".format(moves));
