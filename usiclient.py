@@ -2,7 +2,6 @@ import logging
 import pexpect
 import re
 import sys
-import time
 
 
 
