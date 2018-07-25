@@ -57,3 +57,4 @@ if __name__ == '__main__':
             break
 
     utils.dumpResult(cfg['engine_name1'],cfg['engine_name2'],sente)
+    utils.dumpKif(cfg['engine_name1'],cfg['engine_name2'],moves)
