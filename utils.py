@@ -42,7 +42,7 @@ def dumpKif(black, white, sf):
             pass
         elif move=="moves":
             pass
-        elif move[:4]=="resi":
+        elif move=="resign":
             pass
         elif move=="position":
             pass
