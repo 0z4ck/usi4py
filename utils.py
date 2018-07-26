@@ -42,12 +42,13 @@ def dumpKif(black, white, sf):
             pass
         elif move=="moves":
             pass
-        elif move=="resign":
-            pass
         elif move=="position":
             pass
         elif move=="startpos":
             pass
+        elif move=="resign":
+            m = "  {} 投了   ( 0:00/00:00:00)".format(c)
+            moji += m + "\n"
         elif move[1]=="*":
             piece = move[0]
             c += 1 
